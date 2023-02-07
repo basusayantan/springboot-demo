@@ -1,0 +1,24 @@
+spring:
+ datasource:
+  username: root
+  password: root
+  url: jdbc:mysql://localhost:3306/blog
+ jpa:
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  hibernate:
+   ddl-auto: update
+app:
+ relevant_package: blog
+security:
+ require-ssl: true
+server:
+ ssl:
+  key-store: classpath:springboot.p12
+  key-alias: springboot
+  key-store-type: PKCS12
+  key-store-password: changeit
+  ciphers: TLS_AES_128_GCM_SHA256
+  protocol: TLSv1.3
+ port: 8443
