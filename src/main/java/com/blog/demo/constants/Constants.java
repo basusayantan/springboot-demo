@@ -11,5 +11,7 @@ public class Constants {
 	
 	public static final String TITLE_ERR_MSG = "Title should be between 5 and 25 characters";
 	public static final String CONTENT_ERR_MSG = "Invalid Content: CANNOT be empty or more than 180 characters";
+
+	private Constants() {}
 			
 }
